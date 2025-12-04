@@ -1,0 +1,33 @@
+{
+  "name": "time-manipulator",
+  "version": "1.0.0",
+  "description": "Uma biblioteca para auxiliar na manipulação e formatação de tempo.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test:local": "ts-node test.ts"
+  },
+  "keywords": [
+    "time",
+    "helper",
+    "format",
+    "typescript",
+    "time-manipulation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    /* Módulos e Target */
+    "target": "ES2020",                             /* Define a versão de ECMAScript para o código de saída. */
+    "module": "CommonJS",                           /* Define o sistema de módulo para o código gerado (compatível com Node.js). */
+    "esModuleInterop": true,                        /* Permite interoperabilidade com módulos CommonJS/ES Modules. */
+    "moduleResolution": "node",                     /* Resolve módulos usando o algoritmo de Node.js. */
+
+    /* Diretórios e Build */
+    "outDir": "./dist",                             /* Diretório onde os arquivos compilados serão colocados. */
+    "rootDir": "./src",                             /* Diretório onde os arquivos de código-fonte TS estão. */
+    "declaration": true,                            /* GERA os arquivos .d.ts (definições de tipo) essenciais para libs. */
+    "skipLibCheck": true,                           /* Ignora a verificação de tipo de arquivos .d.ts de terceiros (melhora o tempo de compilação). */
+
+    /* Rigor de Tipagem */
+    "strict": true,                                 /* Ativa todas as opções rigorosas de verificação de tipo. */
+    
+    /* Configuração do Ambiente (Importante para o 'console') */
+    "lib": ["ES2020", "DOM"],                       /* Inclui bibliotecas de tipos. DOM é necessário para o 'console'. */
+    "types": ["node"]                               /* Inclui tipos de ambiente do Node.js. */
+  },
+  "include": ["src/**/*"],                          /* Inclui todos os arquivos TS dentro da pasta src. */
+  "exclude": ["node_modules", "dist"]               /* Exclui pastas que não devem ser compiladas. */
+}
